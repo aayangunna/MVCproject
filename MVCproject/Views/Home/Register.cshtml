@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>Brain Tech SIM Registration </h1>
+    </div>
+    <div>
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <div class="col-md-4">First Name:</div>
+                <div class="col-md-8"><input type="text" name="firstName" class="form-control" /></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">Middle Name:</div>
+                <div class="col-md-8"><input type="text" name="middleName" class="form-control" /></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">Last Name:</div>
+                <div class="col-md-8"><input type="text" name="lastName" class="form-control" /></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">Date of Birth:</div>
+                <div class="col-md-8"><input type="date" name="DOB" class="form-control" /></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 left">Phone Number:</div>
+                <div class="col-md-8 left"><input type="tel" maxlength="11" name="phoneNumber" class="form-control" /></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">Email:</div>
+                <div class="col-md-8"><input type="email" name="email" class="form-control" /></div>
+            </div>
+            <div>@ViewBag.ErrorMessage</div>
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <button type="submit" class="btn-success">
+                        Submit Here
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
+
+
